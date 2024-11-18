@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-1 {
+  background: url('1stimg.jpg') no-repeat center center/cover;
+}
+.section-2 {
+  background: url('2ndimg.jpg') no-repeat center center/cover;
+}
+.section-3 {
+  background: url('3rdimg.jpg') no-repeat center center/cover;
+}
+.section-4 {
+  background: url('4rtimg.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 100vh; 
+  
+}
+.section-5 {
+  position: relative;
+  background: url('5thimg.jpg') no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); 
+  filter: blur(8px);
+  z-index: 1;
+}
+
+.sec1but {
+  margin: 200px 0px 0px 200px;
+  color: white;
+  background-color: red;
+  border-radius: 60px;
+  padding: 30px 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.peru {
+  color: white;
+  padding: 150px 0px 0px 150px;
+  font-size: large;
+  font-weight: 800;
+}
+
+.areacon {
+  position: relative;
+  width: 100%; 
+  max-width: 500px; 
+  margin-left: 140px;
+}
+
+.area {
+opacity: 80%;
+  width: 70%;
+  padding: 30px 40px 30px 20px; 
+  font-size: 35px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  color: 	#99ff33;
+  font-weight: bold;
+}
+.yaar {
+  padding-left: 900px;
+  font-size: 60px;
+  color: yellow;
+  margin-top: 20px;
+}
+.arrow {
+  position: absolute;
+  right: 160px;
+  top: 42px;
+  transform: translateY(-40%);
+  cursor: pointer;
+}
+
+.arrow svg {
+  width: 50px;
+  height: 50px;
+  stroke: gray; 
+}
+.inthapakkam{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+flex-direction: column;
+gap: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.sec3but{
+  color: white;
+  background-color: red;
+  border-radius: 60px;
+  padding: 30px 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.ost{
+  
+  background-color: rgba(0, 0, 0, 0.61);
+  
+
+  margin-top: 100px;
+  width: 350px;
+ 
+  border-radius: 40px;
+}
+.goten{
+  color:#99ff33;
+}
+.voten{
+  color:red
+}
+.down{
+  
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  background-color: black;
+  text-align: center;
+}
+.chutney{
+  margin: 0;
+  color: yellow;
+  font-size: 55px;
+}
+.contact {
+  position: relative;
+  z-index: 2; 
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  text-align: center;
+}
